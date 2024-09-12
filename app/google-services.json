@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "487640408991",
+    "project_id": "payapp-43975",
+    "storage_bucket": "payapp-43975.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487640408991:android:a116112a04a05abb9dd3aa",
+        "android_client_info": {
+          "package_name": "com.example.googlepayapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487640408991-3dfsak1megg4op5j9f2mlcecsqhv1qev.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.googlepayapp",
+            "certificate_hash": "c3469fa16be8a5d4c46364e67b8073bdb25c9165"
+          }
+        },
+        {
+          "client_id": "487640408991-an7bkj6nnctl6q8t8onp7klnnn1k96u9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEli8hUtupln75Q2ZjX-E80pZ303j7gRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487640408991-an7bkj6nnctl6q8t8onp7klnnn1k96u9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

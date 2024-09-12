@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GooglePayApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    Terms and conditions-->
+    <string name="terms_and_conditions">By continuing you agree to the Combined Google Pay <b><font color="#3A81F1">Terms</font></b>. The <b><font color="#3A81F1">Privacy Policy</font></b> describes how your data is handled. Google Pay will periodically send your contacts and location to Google servers. People with your number can contact you across Google services and see your public information like name and photo. The phone number you have provided can be used on different <b><font color="#3A81F1">Google Services</font></b>.</string>
+    <string name="terms_and_conditions2">Google Pay collects your phone number, device, payment and location, to set up payment methods and control risk. This and other transaction information may be shared with your payment provider, network and 3rd parties.</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>

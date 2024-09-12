@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".LoginFragment">
+
+    <ImageView
+        android:id="@+id/gpay_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_gpay"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_welcome"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Google Pay"
+        android:textSize="26sp"
+        app:layout_constraintLeft_toLeftOf="@id/gpay_logo"
+        app:layout_constraintTop_toBottomOf="@id/gpay_logo" />
+
+    <TextView
+        android:id="@+id/txt_helper_phone"
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Enter your phone number"
+        android:textColor="#838383"
+        android:textSize="17.5sp"
+        app:layout_constraintLeft_toLeftOf="@id/txt_welcome"
+        app:layout_constraintTop_toBottomOf="@id/txt_welcome" />
+
+    <EditText
+        android:id="@+id/editText"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_flag"
+        android:drawablePadding="10dp"
+        android:editable="false"
+        android:padding="15dp"
+        android:text="+91"
+        app:layout_constraintLeft_toLeftOf="@id/txt_helper_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_helper_phone" />
+
+    <EditText
+        android:id="@+id/et_phone_number"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/custom_input"
+        android:hint="00000 ..."
+        android:inputType="phone"
+        android:maxLength="10"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText"
+        app:layout_constraintLeft_toLeftOf="@id/txt_helper_phone"
+        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintTop_toTopOf="@+id/editText" />
+
+
+    <TextView
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_btn"
+        android:clickable="false"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/continue_btn_text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <!--    Progress Bar-->
+    <RelativeLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="215dp"
+            android:src="@drawable/ic_otp_progress" />
+
+        <ProgressBar
+            android:id="@+id/progressCircle"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="200dp"
+            android:progressBackgroundTint="@color/theme_blue"
+            android:progressDrawable="@color/theme_blue"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_progress_bar"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressCircle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Verifying +91 7723807525"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_process"
+            android:layout_width="275dp"
+            android:layout_height="215dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_sending_otp" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
